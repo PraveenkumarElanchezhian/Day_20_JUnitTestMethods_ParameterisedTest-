@@ -11,8 +11,11 @@ class Name {
 	public void first_LastName() {
 		String firstName = "Praveen";
 		String lastName="Kumar";
-		String regex = "^[A-Z]{1}[a-z]{2}[a-z]*";
-		System.out.println(firstName.matches(regex));
-		System.out.println(lastName.matches(regex));
+		String email="abc.xyx@bl.co.in";
+		String regEx_Name = "^[A-Z]{1}[a-z]{2}[a-z]*";
+		String regEx_email = "^(.+)@(.+)$";
+		System.out.println(firstName.matches(regEx_Name));
+		System.out.println(lastName.matches(regEx_Name));
+		System.out.println(email.matches(regEx_email));
 	}
 }
